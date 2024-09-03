@@ -41,12 +41,13 @@ const UserProfile = ( {params} ) => {
  if (!user)  return <div>User not found</div>
 
   return (
-    <Profile
-      name={user.username}
-      desc='Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination'
-      data={userPosts}
+    // <Profile
+    //   name={user.username}
+    //   desc='Welcome to your personalized profile page. Share your exceptional prompts and inspire others with the power of your imagination'
+    //   data={userPosts}
     
-    />
+    // />
+    <div>Profile</div>
   );
 };
 
