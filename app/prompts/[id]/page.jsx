@@ -3,7 +3,7 @@
 import React, { useState, useEffect} from 'react'
 import { useSession } from 'next-auth/react'
 import { useRouter, notFound } from "next/navigation";
-import PromptView from '@/components/Prompt';
+import PromptView from '@components/Prompt';
 
 const ViewPrompt = ({ params }) => {
   const {id} = params;
