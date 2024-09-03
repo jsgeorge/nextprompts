@@ -4,7 +4,7 @@ import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
-import Profile from "@components/Profile";
+import Profile from "@/components/Profile";
 
 const UserProfile = ( {params} ) => {
     const {id} = params;
@@ -26,7 +26,7 @@ const UserProfile = ( {params} ) => {
         const data = await response.json();
   
         setUser(data);
-        createPrompt(data.id)
+        // createPrompt(data.id)
       };
     const fetchPosts = async () => {
       const response = await fetch(`/api/users/${id}/posts`);
