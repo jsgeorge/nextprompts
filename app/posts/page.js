@@ -15,7 +15,7 @@ const Posts = ({ posts }) => {
     </div>
   );
 }
-export  async function page() {
+export  async function PostsPage() {
   
     const res = await fetch('http://localhost:3000/api/posts')
     const posts = await res.json();
